@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head><title>Accommodation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+
+		* {
+			box-sizing: border-box;
+			font-family:Arial;
+			margin: 0;
+			padding: 0;
+		}
+			
+			
+		#header, #footer{
+			color:#b3b300;
+			background-color:#051405;
+			text-align:center;
+			padding:10px;
+			}
+			
+	/*css for navigation bar*/
+			
+		ul.navi {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+				}
+
+		li.navi {
+			float: left;
+			border-right:1px solid #bbb;
+				}
+
+		li.navi a {
+			display: block;
+			color:#ffff00;
+			text-align: center;
+			padding: 12px 13px;
+			text-decoration: none;
+					}
+
+		li.navi a:hover {
+			background-color: #8c8c73;
+					}
+	
+		li.navi:last-child {
+			border-right: none;
+				}
+				
+		#active {
+			text-decoration:underline;
+			text-decoration-style: double;
+				}
+		
+		h1{
+			text-align:center;
+			padding:5px;
+				}
+				
+		img{
+			height:300px;
+			width:350px;
+			border:2px solid black;
+			}
+			
+		ol{
+			padding:50px;
+				}
+				
+		
+		button{
+			margin:20px;
+			color:#000058;
+			font-weight:bold;
+			font-size:22px;
+			font-family:Snap ITC;
+				}
+				
+	/*css for footer*/
+				
+		.fa {
+			padding: 5px;
+			font-size: 20px;
+			width: 25px;
+			text-align: center;
+			text-decoration: none;
+			margin: 3px 5px;
+				}
+
+		.fa:hover {
+			opacity: 0.7;
+			}
+
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+			}
+
+		.fa-twitter {
+			background: #55ACEE;
+			color: white;
+			}
+
+		.fa-youtube {
+			background: #bb0000;
+			color: white;
+			}	
+
+		.fa-instagram {
+			background: #125688;
+			color: white;
+			}	
+				
+		#badulla{
+			background-color:#ccccb3;
+			}
+			
+		#ella{
+			background-color:#b3d9ff;
+			}
+			
+		font{
+			font-size:40px;
+			font-family:Snap ITC;
+		}
+			
+		[class*="col-"] {
+			float: left;
+			
+			}
+
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+			@media screen and (max-width: 500px) {
+				[class*="col-"] {
+					width: 100%
+				}
+			}
+
+    </style>
+</head>
+<body>
+
+<div id="header" class="col-12">
+    <font>BADULLA TOURS</font>
+
+    <div class="col-8">
+        <ul class="navi">
+            <li class="navi"><a href="home.html" >Home</a></li>
+            <li class="navi"><a href="about.html" >About Us</a></li>
+            <li class="navi"><a href="Places.html" >Places to visit</a></li>
+            <li id="active" class="navi"><a href="Accomodation.html" >Accommodation</a></li>
+            <li class="navi"><a href="guides.html" >Tour Guides</a></li>
+            <li class="navi"><a href="Package.html">Package Details</a></li>
+            <li class="navi"><a href="forms.html" target="blank">Payment</a></li>
+        </ul>
+    </div>
+</div>
+
+<h1>Reserve your favourite place!!!!</h1>
+
+<div id="badulla" class="col-6" ;>
+    <h1>Badulla River View Hotel</h1>
+
+    <div class="col-6" ;>
+        <img src="images/river.jpg">
+    </div>
+
+    <div class="col-6">
+        <ol>
+            <li>Situate 2km form Badulla</li>
+            <li>Surrounded by the river</li>
+            <li>Best facilites avialble</li>
+            <ul type="circle">
+                <li>Luxury rooms with all the facilities</li>
+                <li>Free wifi</li>
+                </li>Swimming pool</li>
+                <li>Laundary services</li>
+            </ul>
+
+            <button onclick="window.open('forms.html')">Book Now!</button>
+        </ol>
+
+    </div>
+
+
+</div>
+
+<div id="badulla" class="col-6" ;>
+    <h1>Badulla Village Side</h1>
+
+    <div class="col-6">
+        <img src="images/hotel2.jpg">
+    </div>
+
+    <div class="col-6">
+        <ol>
+            <li>Situate 5km form Badulla town</li>
+            <li>Best experience in village side</li>
+            <li>Best facilites avialble</li>
+            <ul type="circle">
+                <li>Luxury rooms with all the facilities</li>
+                <li>Free wifi</li>
+                </li>Swimming pool</li>
+                <li>Laundary services</li>
+            </ul>
+            <button onclick="window.open('forms.html')">Book Now!</button>
+        </ol>
+    </div>
+</div>
+
+<div id="ella" class="col-6" ;>
+    <h1>Ella Tourist Inn</h1>
+
+    <div class="col-6">
+        <img src="images/hotel.jpg">
+    </div>
+
+    <div class="col-6">
+        <ol>
+            <li>Situate 4km form Bandarawela Town</li>
+            <li>1km from Ella town</li>
+            <li>Best facilites avialble</li>
+            <ul type="circle">
+                <li>Luxury rooms with all the facilities</li>
+                <li>Free wifi</li>
+                </li>Swimming pool</li>
+                <li>Laundary services</li>
+            </ul>
+            <button onclick="window.open('forms.html')">Book Now!</button>
+        </ol>
+    </div>
+</div>
+
+<div id="ella" class="col-6" ;>
+    <h1>Ella Guest</h1>
+
+    <div class="col-6">
+        <img src="images/hotel3.jpg">
+    </div>
+
+    <div class="col-6">
+        <ol>
+            <li>Situate 4km form Bandarawela Town</li>
+            <li>1km from Ella village</li>
+            <li>Best facilites avialble</li>
+            <ul type="circle">
+                <li>Luxury rooms with all the facilities</li>
+                <li>Free wifi</li>
+                </li>Swimming pool</li>
+                <li>Laundary services</li>
+            </ul>
+            <button onclick="window.open('forms.html')">Book Now!</button>
+        </ol>
+    </div>
+</div>
+
+
+<h1>You also can select our packages for accommodation and tour guides for lesser price amount!!</h1>
+
+
+<div id="footer" class="col-12">
+    <div class="col-4">
+        Contact Us
+        <br/><br/>
+        +94725689456,+945544524<br/><br/>
+        badullatours@gmail.com
+    </div>
+
+    <div class="col-4">
+        Find Us on:<br/><br/>
+        <a class="fa fa-facebook"><a/>
+            <a class="fa fa-twitter"><a/>
+                <a class="fa fa-youtube"><a/>
+                    <a class="fa fa-instagram"><a/>
+    </div>
+
+    <div class="col-4">
+        Location<br/><br/>
+        <address>Badulla Tours, No 28, Main Street, Badulla, 900000</address>
+    </div>
+
+</div>
+</body>
+</html>

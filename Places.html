@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head><title>Places to visit in Badulla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$(this).hide();
+				});
+			});
+
+    </script>
+
+    <style type="text/css">
+	
+		* {
+    	box-sizing: border-box;
+		font-family:Arial;
+		margin: 0;
+		padding: 0;
+		}
+			
+		#header, #footer{
+			color:#b3b300;
+			background-color:#051405;
+			text-align:center;
+			padding:10px;
+			}
+			
+		font{
+		font-size:40px;
+		font-family:Snap ITC;
+		}
+		
+		/*css for navigation bar*/
+	
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+				}
+
+		li {
+			float: left;
+			border-right:1px solid #bbb;
+				}
+
+		li a {
+			display: block;
+			color:#ffff00;
+			text-align: center;
+			padding: 12px 13px;
+			text-decoration: none;
+					}
+
+		li a:hover {
+			background-color: #8c8c73;
+					}
+	
+		li:last-child {
+			border-right: none;
+				}			
+				
+		#active {
+			text-decoration:underline;
+			text-decoration-style: double;
+				}
+				
+		/*css for footer*/
+				
+		.fa {
+			padding: 5px;
+			font-size: 20px;
+			width: 25px;
+			text-align: center;
+			text-decoration: none;
+			margin: 3px 5px;
+				}
+
+		.fa:hover {
+			opacity: 0.7;
+			}
+
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+			}
+
+		.fa-twitter {
+			background: #55ACEE;
+			color: white;
+			}
+
+		.fa-youtube {
+			background: #bb0000;
+			color: white;
+			}	
+
+		.fa-instagram {
+			background: #125688;
+			color: white;
+			}		
+				
+		img{
+			height:300px;
+			width:300px;
+			border:2px solid black;
+				}
+				
+				
+		#js,#js1,#js2,#js3,#js4,#js5,#js6,#js7{
+			display:none;
+			}
+					
+		[class*="col-"] {
+    	float: left;
+    	padding: 15px;
+		}
+
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		@media screen and (max-width: 500px) {
+			[class*="col-"] {
+				width: 100%
+			}
+		}
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div id="header" class="col-12">
+    <font>BADULLA TOURS</font>
+
+    <div class="col-8">
+        <ul>
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="about.html" >About Us</a></li>
+            <li><a id="active" href="Places.html" >Places to visit</a></li>
+            <li><a href="Accomodation.html" >Accommodation</a></li>
+            <li><a href="guides.html" >Tour Guides</a></li>
+            <li><a href="Package.html" target="blank">Package Details</a></li>
+            <li><a href="forms.html" target="blank">Payment</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="place1" class="col-3" style="background-color:#33ff77" ; align="center" ;>
+    <h1>Dunhinda Water Falls</h1>
+    <img src="images/dunhinda falls.jpg">
+    <p id="js">Dunhinda Falls is a very majestic looking waterfall, situated about 5 km from Badulla. Due to its smoky
+        water drops spray, it is also named the “Bridal Fall” and another reason to get this name is that that the shape
+        of the waterfall is like a bridal veil.</p>
+    <button type="button" onclick="document.getElementById('js').style.display='block'">More Info</button>
+</div>
+
+<div id="place2" class="col-3" style="background-color:#009933" ; align="center" ;>
+    <h1>Dhowa Rock Temple</h1>
+    <img src="images/dhowa.jpg">
+    <p id="js1">Dhowa Rock Temple a protected heritage site in Sri Lanka, situated in the central mountains of the Uva
+        province.
+        The Dhowa rock temple is famous for its large unfinished Buddha image, carved into the rock face, which is
+        considered an example of Mahayana sculpture.</p>
+    <button type="button" onclick="document.getElementById('js1').style.display='block'">More Info</button>
+</div>
+
+<div id="place3" class="col-3" style="background-color:#33ff77" ; align="center" ;>
+    <h1>Bogoda Wooden Bridge</h1>
+    <img src="images/bogoda.jpg">
+    <p id="js2">The Bogoda Wooden Bridge was built in the 16th century during the Dambadeniya era. This is said to be
+        the oldest surviving wooden bridge in Sri Lanka.
+        All parts of this bridge were constructed from wood, including the use of wooden nails as fixing material.</p>
+    <button type="button" onclick="document.getElementById('js2').style.display='block'">More Info</button>
+</div>
+
+<div id="place4" class="col-3" style="background-color:#009933" ; align="center" ;>
+    <h1>Muthiyangana Raja Maha Vihara</h1>
+    <img src="images/temple.jpeg">
+    <p id="js3">Muthiyangana Raja Maha Vihara is an ancient Buddhist temple located in the middle of Badulla town in the
+        Badulla District of Uva Province in Sri Lanka.
+        It is one of the significant landmarks in the Buddhist culture and it lies in the center of Badulla</p>
+    <button type="button" onclick="document.getElementById('js3').style.display='block'">More Info</button>
+</div>
+
+<div id="place5" class="col-3" style="background-color:#009933" ; align="center" ;>
+    <h1>Narangala</h1>
+    <img src="images/55.jpg">
+    <p id="js4">Beautiful Narangala, with its golden grass, rises up to a height of over 1500m in the Uva Province of
+        Sri Lanka. The summit of this second highest mountain in Uva, provides some of the very best views in the entire
+        tropical island. In addition to it; the reasonable challenge that climbing it offers has made it a great
+        favorite amongst hikers.</p>
+    <button type="button" onclick="document.getElementById('js4').style.display='block'">More Info</button>
+</div>
+
+<div id="place6" class="col-3" style="background-color:#33ff77" ; align="center" ;>
+    <h1>Ella Waterfall</h1>
+    <img src="images/04.jpg">
+    <p id="js5">This waterfall measures approx 25 m in height and cascades from an oval-shaped concave rock outcrop.
+        During the local wet season, the waterfall turns into what is said to resemble an areca flower with withering
+        petals. But this is not the case in the dry season, where the flow of water reduces dramatically. The falls form
+        part of the Ravana Ella Wildlife Sanctuary.</p>
+    <button type="button" onclick="document.getElementById('js5').style.display='block'">More Info</button>
+</div>
+
+<div id="place7" class="col-3" style="background-color:#009933" ; align="center" ;>
+    <h1>Lipton Seat</h1>
+    <img src="images/lipton seat.jpg">
+    <p id="js6">The Lipton’s Seat lookout is one of Sri Lanka's most impressive viewpoints unless it's misty and cloudy
+        of course, which is why early morning is the best time to visit. The Scottish tea baron Sir Thomas Lipton used
+        to survey his burgeoning empire from here, and today it's said emerald hills and tea estates to no fewer than
+        seven different provinces.</p>
+    <button type="button" onclick="document.getElementById('js6').style.display='block'">More Info</button>
+</div>
+
+<div id="place8" class="col-3" style="background-color:#33ff77" ; align="center" ;>
+    <h1>Nine Arch bridge</h1>
+    <img src="images/arch1.jfif">
+    <p id="js7">The Nine Arch Bridge also called the Bridge in the Sky, is a viaduct bridge in Sri Lanka. It is located
+        in Demodara, between Ella and Demodara railway stations. It is one of the colonial-era railway construction in
+        the country. The surrounding area has seen a steady increase of tourism due to the bridge's architecture.</p>
+    <button type="button" onclick="document.getElementById('js7').style.display='block'">More Info</button>
+</div>
+
+
+<div id="footer" class="col-12">
+    <div class="col-4">
+        Contact Us
+        <br/><br/>
+        +94725689456,+945544524<br/><br/>
+        badullatours@gmail.com
+    </div>
+
+    <div class="col-4">
+        Find Us on:<br/><br/>
+        <a class="fa fa-facebook"><a/>
+            <a class="fa fa-twitter"><a/>
+                <a class="fa fa-youtube"><a/>
+                    <a class="fa fa-instagram"><a/>
+    </div>
+
+    <div class="col-4">
+        Location<br/><br/>
+        <address>Badulla Tours, No 28, Main Street, Badulla, 900000</address>
+    </div>
+
+</div>
+
+
+</body>
+</html>

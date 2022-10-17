@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head><title>Forms</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+function myfunction(){
+              var x = document.forms["form"]["agreed"].checked;
+			  
+				if (x=== false){
+				
+                           alert("Please agree to our terms and conditions");
+						   return false;
+                           }
+						}
+
+    </script>
+    <script>
+					   
+function check(){
+						   
+						   
+			 var mobile= document.getElementById('mobile');
+			 var message= document.getElementById('message');
+			  
+			  
+				if(mobile.value.length!=10){
+					 message.innerHTML="Required 10 digits"
+							}
+				}
+
+    </script>
+
+    <style type="text/css">
+
+		span{
+			color:red;
+			}
+
+	* {
+    	box-sizing: border-box;
+		font-family:Arial;
+        margin: 0;
+		padding: 0;
+			}
+	
+	#header, #footer{
+			color:#b3b300;
+			background-color:#051405;
+			text-align:center;
+			padding:10px;
+			}
+			
+	/*css for navigation tab*/
+			
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+				}
+
+		li {
+			float: left;
+			border-right:1px solid #bbb;
+				}
+
+		li a {
+			display: block;
+			color:#ffff00;
+			text-align: center;
+			padding: 12px 13px;
+			text-decoration: none;
+					}
+
+		li a:hover {
+			background-color: #8c8c73;
+					}
+	
+		li:last-child {
+			border-right: none;
+				}
+				
+	/*css for footer*/
+				
+		.fa {
+			padding: 5px;
+			font-size: 20px;
+			width: 25px;
+			text-align: center;
+			text-decoration: none;
+			margin: 3px 5px;
+				}
+
+		.fa:hover {
+			opacity: 0.7;
+			}
+
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+			}
+
+		.fa-twitter {
+			background: #55ACEE;
+			color: white;
+			}
+
+		.fa-youtube {
+			background: #bb0000;
+			color: white;
+			}	
+
+		.fa-instagram {
+			background: #125688;
+			color: white;
+			}
+				
+		#active {
+			text-decoration:underline;
+			text-decoration-style: double;
+				}
+				
+				
+		#left {
+			background-image:url("images/tour7.jpg");
+			background-size:cover;
+			height:1085px;
+				}	
+	
+		#right {
+			background-image:url("images/tour6.jpg");
+			background-size:cover;
+			height:1085px;	
+				}		
+			
+		/*css for forms*/
+			
+		#form {
+			padding: 10px;
+			background-color:#c2c2a3;
+			}
+			
+		.col-12{
+			padding:6px;
+			}
+
+		input[type=text],[type=email],[type=number],[type=date],select{
+			width: 75%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			border-radius: 15px;
+					}
+				
+		[type=reset],[type=submit]{
+			width: 75%;
+			padding: 12px;	
+			margin:10px;
+				}
+		
+		font{
+			font-size:40px;
+			font-family:Snap ITC;
+			}
+	
+
+	[class*="col-"] {
+    	float: left;
+    	
+		}
+
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		@media screen and (max-width: 500px) {
+			[class*="col-"] {
+				width: 100%
+			}
+		}
+
+
+    </style>
+
+</head>
+<body>
+
+<div id="header" class="col-12">
+    <font>BADULLA TOURS</font>
+
+    <div class="col-8">
+        <ul class="navi">
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="about.html" >About Us</a></li>
+            <li><a href="Places.html" >Places to visit</a></li>
+            <li><a href="Accomodation.html" >Accommodation</a></li>
+            <li><a href="guides.html" >Tour Guides</a></li>
+            <li><a href="Package.html">Package Details</a></li>
+            <li id="active"><a href="forms.html" target="blank">Payment</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="left" class="col-2">
+
+</div>
+
+<div id="form" class="col-8" onsubmit="return myfunction()">
+    <center><h1>Please fill out the following form with correct details</h1></center>
+    <form name="form" method="get">
+
+        <div class="col-12">
+            <div class="col-3">
+                First name :
+            </div>
+            <div class="col-9">
+                <input type="text" name="firstname" required/>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Last name :
+            </div>
+            <div class="col-9">
+                <input type="text" name="lastname"/>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Address :
+            </div>
+            <div class="col-9">
+                <input type="text" name="address"/>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Contact Details
+                <br/><br/>
+                Email :
+            </div>
+            <div class="col-9">
+                <br/><br/>
+                <input type="email" name="email" placeholder="abcd@gmail.com"/><br/><br/>
+            </div>
+
+            <div class="col-3">
+                Mobile :
+            </div>
+            <div class="col-9">
+                <span id="message"></span><br/>
+                <input name="mobile" id="mobile" type="number" required onkeyup="check(); return false;">
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                No of Tourists :
+            </div>
+            <div class="col-9">
+                <input type="radio" name="num" value="l1"/>1-3 <br/>
+                <input type="radio" name="num" value="l2"/>4-6<br/>
+                <input type="radio" name="num" value="l3"/>7-10<br/>
+                <input type="radio" name="num" value="l4"/>More than 10
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Tour days :
+            </div>
+            <div class="col-9">
+                <input type="radio" name="num" value="l1"/>1-3 <br/>
+                <input type="radio" name="num" value="l2"/>4-5<br/>
+                <input type="radio" name="num" value="l3"/>5-7<br/>
+                <input type="radio" name="num" value="l4"/>More than 7
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Arrival Date :
+            </div>
+            <div class="col-9">
+                <input type="date" name="day" required/>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Departure Date :
+            </div>
+            <div class="col-9">
+                <input type="date" name="day1"/>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Prefered languages :
+            </div>
+            <div class="col-9">
+                <input type="checkbox" name="sinhala" value="s1"/>Sinhala<br/>
+                <input type="checkbox" name="tamil" value="s2"/>Tamil<br/>
+                <input type="checkbox" name="english" value="s3"/>English
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3">
+                Payment category
+            </div>
+            <div class="col-9">
+                <select name="payment">
+                    <option value="pay1">Accommodation</option>
+                    <option value="pay2">Tour guides</option>
+                    <option value="pay3" selected>Package</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-6">
+                I accept the Terms and Conditions
+            </div>
+            <div class="col-6">
+                <input type="checkbox" name="agreed"/>
+            </div>
+        </div>
+
+        <div class="col-7">
+            <div class="col-6">
+                <input type="submit" value="Payment" class="btn btn-info"/>
+            </div>
+            <div class="col-6">
+                <input type="reset" value="Clear" class="btn btn-info"/>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div id="right" class="col-2">
+
+</div>
+
+<div id="footer" class="col-12">
+    <div class="col-4">
+        Contact Us
+        <br/><br/>
+        +94725689456,+945544524<br/><br/>
+        badullatours@gmail.com
+    </div>
+
+    <div class="col-4">
+        Find Us on:<br/><br/>
+        <a class="fa fa-facebook"><a/>
+            <a class="fa fa-twitter"><a/>
+                <a class="fa fa-youtube"><a/>
+                    <a class="fa fa-instagram"><a/>
+    </div>
+
+    <div class="col-4">
+        Location<br/><br/>
+        <address>Badulla Tours, No 28, Main Street, Badulla, 900000</address>
+    </div>
+
+</div>
+
+</body>
+</html>
